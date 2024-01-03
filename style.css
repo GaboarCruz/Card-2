@@ -146,7 +146,7 @@ button{
     text-align: center;
 }
 
-@media (min-width: 1250px) {
+@media (min-width: 1200px) {
     body{
         background-image: url(images/pattern-background-desktop.svg);
     }
@@ -157,5 +157,13 @@ button{
 
     button{
         padding: 1rem ;  
+    }
+
+    #card-plan-type p{
+        font-size: 1.5rem;
+    }
+
+    #card-plan-type h2, #card-plan-change, button, #card-text {
+        font-size: 1.6rem;
     }
 }
