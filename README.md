@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # Frontend Mentor - Order summary card
 
 ![Design preview for the Order summary card coding challenge](./design/desktop-preview.jpg)
@@ -89,3 +90,7 @@ We love receiving feedback! We're always looking to improve our challenges and o
 This challenge is completely free. Please share it with anyone who will find it useful for practice.
 
 **Have fun building!** 🚀
+=======
+# CardExample-2
+This is a card challenge from FrontEnd Mentor, its called Order Sumary Component
+>>>>>>> e30a540af220159eb6fa8ba794cc0360a3574be4
