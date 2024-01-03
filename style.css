@@ -146,7 +146,7 @@ button{
     text-align: center;
 }
 
-@media (min-width: 1440px) {
+@media (min-width: 1250px) {
     body{
         background-image: url(images/pattern-background-desktop.svg);
     }
