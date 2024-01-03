@@ -15,11 +15,147 @@
     --bright-blue: hsl(245, 75%, 52%);
 
     /*Secundary Colors*/
-    --very-pale-blue: hsl(225, 100%, 98%);  
+    --very-pale-blue: hsl(225, 100%, 98%);
     --desaturated-blue: hsl(224, 23%, 55%);
     --dark-blue: hsl(223, 47%, 23%);
 }
 
-html{
+html {
     font-size: 62.5%;
+}
+
+body{
+    background-color: var(--pale-blue);
+    background-image: url(images/pattern-background-mobile.svg);
+    background-repeat: repeat-x;
+}
+
+#card {
+    min-height: 97vh;
+    display: grid;
+    place-items: center;
+    font-family: 'Red Hat Display', sans-serif;
+}
+
+#card-container {
+    width: 300px;
+    background-color: white;
+    border-radius: 1rem;
+    box-shadow: 0 1rem 1rem #ccc;
+    overflow: hidden;
+}   
+
+#card-img {
+    width: 100% ;
+}
+
+.padding-around{
+    padding: 2.4rem ;
+}
+
+
+#card-title, #card-text, #card-plan, #card-buttons-payment {
+    margin-bottom: 1.8rem;
+}
+
+#card-title{
+    text-align: center;
+    font-weight: 900;
+    color: var(--dark-blue);
+}
+#card-text{
+    text-align: center;
+    font-size: 1.3rem;
+    font-weight: 500;
+    color: var(--desaturated-blue);
+}
+
+#card-plan {
+    
+    display: grid;
+    grid-template-columns: 60px 1fr 1fr;
+    align-items: center;
+    padding: 1rem 1.5rem;
+    background-color: var(--very-pale-blue);
+}
+
+#card-plan-img{
+    width: 40px;
+}
+
+#card-plan-type h2{
+    font-size: 1.4rem;
+    margin-bottom: 3px;
+    color: var(--dark-blue);
+}
+
+#card-plan-type p{
+    color: var(--desaturated-blue);
+}
+
+#card-plan-change {
+    justify-self: end;
+    font-size: 1.2rem;
+    font-weight: 700;
+    color: var(--bright-blue );
+    
+}
+
+#card-plan-change:hover{
+    opacity: 0.8;
+    text-decoration: none   ;
+}
+
+button{
+    border-radius: 10px; 
+    padding: 1.3rem 0;  
+    font-family: 'Red Hat Display', sans-serif; 
+    font-weight: 700;
+}
+
+#card-buttons{
+   display: grid;
+   grid-template-columns: 1fr;
+   grid-template-rows: 1fr;
+}
+
+#card-buttons-payment {
+    border: none;
+    background-color: var(--bright-blue);
+    color: white;
+    box-shadow:  0 2rem 2rem #ccc
+}
+
+#card-buttons-payment:hover {
+    opacity: 0.8;
+    cursor: pointer;
+}
+
+#card-buttons-cancel {
+    border: none;
+    color: var(--desaturated-blue);
+    background-color: inherit;
+}
+
+#card-buttons-cancel:hover{
+    color: var(--dark-blue);
+    cursor: pointer;
+}
+
+.attribution{
+    text-align: center;
+}
+
+@media (min-width: 1440px) {
+    body{
+        background-image: url(images/pattern-background-desktop.svg);
+    }
+
+    #card-container {
+        width: 340px;
+    }   
+
+    button{
+        padding: 1rem ;  
+    }
 }
